@@ -1,0 +1,59 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paws City Pet Supply Co.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header with Responsive Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Paws City</div>
+      <div class="menu-toggle" id="mobile-menu">☰</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Paws City Pet Supply Co.</h1>
+    <p>Your one-stop shop for all your pet needs.</p>
+    <a href="#" class="cta-button">Shop Now</a>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="slider">
+      <div class="slide">"Great service and quality products!" - Alex</div>
+      <div class="slide">"My pets love everything I get here." - Jamie</div>
+      <div class="slide">"Fast shipping and awesome customer support!" - Taylor</div>
+    </div>
+  </section>
+
+  <!-- Footer with Contact Form -->
+  <footer>
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="form-response"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
