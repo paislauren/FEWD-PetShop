@@ -1,64 +1,97 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Import Roboto Slab from Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&display=swap" rel="stylesheet">
+    <title>Paws City Pet Supply Co.</title>
     <link rel="stylesheet" href="styles.css">
-  </head>
+</head>
 <body>
+    <!-- Header -->
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="assets/logos/pawscity-logo.png" alt="Paws City Logo"> <!-- Logo added here -->
+        </nav>
+    </header>
 
-  <!-- Header with Responsive Navigation -->
-  <header>
-    <nav class="navbar">
-      <img src="assets/logos/pawscity-logo.png">
-      <div class="menu-toggle" id="mobile-menu">☰</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="search-bar">
-        <input type="text" placeholder="Search...">
-      </div>
-    </nav>
-  </header>
-  <div class="top-bar"></div>
-    <div class="info">
-      <p>Call Us: (123) 456-7890 | Email: info@pawscity.com</p>
+      <!-- Search Bar Section -->
+      <section class="search-bar-section">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Paws City Pet Supply Co.</h1>
+        <p>Your one-stop shop for all your pet needs!</p>
+    </section>
+
+<!-- Menu Section with Images -->
+<section id="shop" class="shop">
+    <h2 class="shop-title">Shop by Pet</h2>
+    <div class="shop-categories">
+        <div id="birds" class="shop-category">
+            <img src="assets/photos/birds.jpg" alt="Birds" class="shop-image">
+            <h3 class="shop-category-title">Birds</h3>
+            <button class="shop-button">Shop Birds</button>
+        </div>
+        <div id="cats" class="shop-category">
+            <img src="assets/photos/cats.jpg" alt="Cats" class="shop-image">
+            <h3 class="shop-category-title">Cats</h3>
+            <button class="shop-button">Shop Cats</button>
+        </div>
+        <div id="dogs" class="shop-category">
+            <img src="assets/photos/dogs.jpg" alt="Dogs" class="shop-image">
+            <h3 class="shop-category-title">Dogs</h3>
+            <button class="shop-button">Shop Dogs</button>
+        </div>
+        <div id="fish" class="shop-category">
+            <img src="assets/photos/fish.jpg" alt="Fish" class="shop-image">
+            <h3 class="shop-category-title">Fish</h3>
+            <button class="shop-button">Shop Fish</button>
+        </div>
+        <div id="reptiles" class="shop-category">
+            <img src="assets/photos/reptiles.jpg" alt="Reptiles" class="shop-image">
+            <h3 class="shop-category-title">Reptiles</h3>
+            <button class="shop-button">Shop Reptiles</button>
+        </div>
     </div>
-  </div>
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Welcome to Paws City Pet Supply Co.</h1>
-    <p>Your one-stop shop for all your pet needs.</p>
-    <a href="#" class="cta-button">Shop Now</a>
-  </section>
+</section>
 
-  <!-- Testimonial Section -->
-  <section class="testimonials">
-    <h2>What Our Customers Say</h2>
-    <div class="slider">
-      <div class="slide">"Great service and quality products!" - Alex</div>
-      <div class="slide">"My pets love everything I get here." - Jamie</div>
-      <div class="slide">"Fast shipping and awesome customer support!" - Taylor</div>
-    </div>
-  </section>
 
-  <!-- Footer with Contact Form -->
-  <footer>
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-    <div id="form-response"></div>
-  </footer>
+    <!-- Testimonial Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Great service and fast delivery!" - Jane Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"The best pet supplies in the city!" - John Smith</p>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Footer with Contact Form -->
+    <footer>
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-response"></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
