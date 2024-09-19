@@ -28,11 +28,11 @@
         <p>Your one-stop shop for all your pet needs!</p>
     </section>
 
-<!-- Menu Section with Images -->
-<section id="shop" class="shop">
-    <h2 class="shop-title">Shop by Pet</h2>
-    <div class="shop-categories">
-        <div id="birds" class="shop-category">
+    <!--Shop Section-->
+    <section id="shop" class="shop">
+     <h2 class="shop-title">Shop by Pet</h2>
+        <div class="shop-categories">
+         <div id="birds" class="shop-category">
             <img src="assets/photos/birds.jpg" alt="Birds" class="shop-image">
             <h3 class="shop-category-title">Birds</h3>
             <button class="shop-button">Shop Birds</button>
@@ -56,9 +56,9 @@
             <img src="assets/photos/reptiles.jpg" alt="Reptiles" class="shop-image">
             <h3 class="shop-category-title">Reptiles</h3>
             <button class="shop-button">Shop Reptiles</button>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Testimonial Section -->
@@ -74,23 +74,16 @@
         </div>
     </section>
 
-    <!-- Footer with Contact Form -->
-    <footer>
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            
+    <footer class="footer">
+        <h2 class="footer-title">Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
             <button type="submit">Send</button>
         </form>
-        <p id="form-response"></p>
     </footer>
+    
 
     <script src="script.js"></script>
 </body>

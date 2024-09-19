@@ -51,35 +51,58 @@ header {
   }
 }
 
-.menu-icon {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-.menu {
-  list-style: none;
+/* Container for Categories */
+.shop-categories {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.menu li {
-  margin-left: 20px;
+/* Individual Category Styling */
+.shop-category {
+  width: 200px; /* Adjust size as needed */
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #f88824;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
-.menu li a {
-  color: #222222;
+.shop-category:hover {
+  transform: scale(1.05);
+}
+
+.shop-image {
+  width: 100%; 
+  height: 150px; 
+}
+
+/* Category Title Styling */
+.shop-category-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Button Styling */
+.shop-button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Button color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.3s;
 }
 
-@media (max-width: 768px) {
-  .menu {
-      display: none;
-      flex-direction: column;
-  }
-  .menu-icon {
-      display: block;
-  }
+.shop-button:hover {
+  background-color: #0056b3; /* New hover color */
 }
+
 
 /* Hero Section */
 .hero {
@@ -165,7 +188,7 @@ header {
 
 /* Testimonials */
 .testimonials {
-  background-color: #efefef;
+  background-color: #f88824;
   padding: 50px 20px;
   text-align: center;
 }
@@ -176,30 +199,38 @@ header {
 }
 
 /* Footer */
-footer {
+.footer {
   background-color: #003964;
-  color: white;
+  color: #fff;
   padding: 20px;
+  text-align: center;
+}
+.footer form {
+  max-width: 300px; /* Adjust width as needed */
+  margin: 0 auto;   /* Center the form */
+}
+.footer input[type="text"],
+.footer input[type="email"],
+.footer textarea {
+  width: 100%;       /* Full width of the form container */
+  padding: 8px;      /* Adjust padding as needed */
+  font-size: 14px;   /* Adjust font size as needed */
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px; /* Space between fields */
 }
 
-footer form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-footer input, footer textarea {
-  padding: 10px;
+/* Footer button */
+.footer button {
+  background-color: #f88824; /* Initial button color */
   border: none;
-}
-
-footer button {
-  padding: 10px;
-  background-color: #F88824;
-  color: #f4f4f4;
-  border: none;
+  color: #fff;
+  padding: 10px 15px; /* Adjust padding as needed */
+  font-size: 14px;     /* Adjust font size as needed */
+  border-radius: 4px;
   cursor: pointer;
-  
+  transition: background-color 0.3s;
 }
-.footer .shop-button:hover {
-  background-color: #218838;
+.footer button:hover {
+  background-color: #218838; /* New hover color */
+}
